@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  background-color: rgb(14 14 14 / 99%);
+  font-family: "Poppins", sans-serif;
+  line-height: 2;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 120px;
+  background-color: #222;
+  color: azure;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.nav-bar a {
+  display: block;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-bar img {
+  display: block;
+  width: 120px;
+  height: 105px;
+  filter: brightness(40%);
+  justify-content: center;
+}
+
+.nav-bar a.active {
+  background-color: #000;
+  color: white;
+}
+
+.nav-bar a:hover:not(.active) {
+  background-color: #000;
+  color: white;
+}
+
+.heading {
+  color: azure;
+  margin-left: 160px;
+  text-align: center;
+}
+
+.heading h1 {
+  margin-top: 0px;
+  padding-top: 40px;
+}
+
+.heading img {
+  display: block;
+  width: 100%;
+}
+
+.frnt-img {
+  width: 50%;
+  filter: brightness(40%);
+}
+
+.abthead p {
+  color: white;
+  margin-left: 160px;
+  padding: 60px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+}
+.abthead h1,
+.abthead h3 {
+  color: white;
+  margin-left: 160px;
+  padding-left: 60px;
+  padding-top: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.white {
+  margin-left: 220px;
+  background-color: #fff;
+  width: 76%;
+  height: 10%;
+}
+.cards {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+.cards p {
+  padding-top: 20px;
+  font-size: large;
+}
+.card1 {
+  margin-left: 220px;
+  margin-top: 50px;
+  background-color: #fff;
+  width: 500px;
+  height: 130px;
+  text-align: center;
+}
+.card4 {
+  margin-right: 100px;
+  margin-top: 50px;
+  background-color: #fff;
+  width: 500px;
+  height: 130px;
+  text-align: center;
+}
+.card {
+  margin-top: 50px;
+  background-color: #fff;
+  width: 500px;
+  height: 130px;
+  text-align: center;
+}
+
+.btn {
+  margin-top: 50px;
+  margin-left: 220px;
+  padding: 15px;
+  background-color: #fff;
+  width: 13%;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+}
+
+.btn-st {
+  text-decoration: none;
+  color: #000;
+}
+
+.skills {
+  margin-left: 220px;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+
+.t1 {
+  margin-right: 40px;
+  width: 40%;
+}
+
+.t2 {
+  width: 40%;
+}
+
+table {
+  padding: 0;
+}
+
+th,
+td {
+  padding: 25px;
+  width: 32%;
+}
+
+th {
+  background-color: #222;
+  color: #fff;
+}
+
+td {
+  background-color: rgb(71, 70, 70);
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.head {
+  margin-left: 220px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: x-large;
+}
+
+.hd {
+  margin-left: 220px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.hd li {
+  line-height: 2.5;
+}
+
+.contact-me {
+  color: #fff;
+  margin-left: 220px;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-me h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+.mail {
+  width: 15%;
+  text-align: center;
+  background-color: #fff;
+  padding: 15px;
+}
+.mail a {
+  text-decoration: none;
+  color: #000;
+}
+
+.foot-in {
+  padding: 15px;
+  font-size: x-large;
+}
+
+.foot {
+  color: #fff;
+  margin-left: 180px;
+  display: flex;
+  padding: 10%;
+  padding-bottom: 0;
+  justify-content: center;
+}
+.foot a {
+  color: #fff;
+}
+
+.small {
+  color: #fff;
+  margin-left: 180px;
+  text-align: center;
+  padding-bottom: 5%;
+}
