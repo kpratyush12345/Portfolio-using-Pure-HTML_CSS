@@ -128,7 +128,7 @@ body {
   background-color: #fff;
   width: 13%;
   font-family: "Roboto", sans-serif;
-  align-items: center;
+  text-align: center;
 }
 
 .btn-st {
@@ -235,4 +235,29 @@ td {
   margin-left: 180px;
   text-align: center;
   padding-bottom: 5%;
+}
+
+#project {
+  margin-left: 220px;
+  color: #fff;
+}
+
+.project1 {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+
+.im {
+  width: 40%;
+  margin-right: 70px;
+}
+.con {
+  width: 30%;
+  padding: 20px;
+}
+
+.pro img {
+  padding-top: 50px;
+  width: 600px;
+  height: 338px;
 }
