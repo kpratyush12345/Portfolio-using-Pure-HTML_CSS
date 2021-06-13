@@ -7,7 +7,7 @@ body {
   animation: fadeInAnimation ease 4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  width: 100vw;
+  width: 95%;
 }
 
 @keyframes fadeInAnimation {
