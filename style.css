@@ -3,6 +3,18 @@ body {
   background-color: rgb(14 14 14 / 99%);
   font-family: "Poppins", sans-serif;
   line-height: 2;
+  animation: fadeInAnimation ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .nav {
@@ -16,7 +28,9 @@ body {
   height: 100%;
   overflow: auto;
 }
-
+.nav-bar {
+  transition: transform 0.3s;
+}
 .nav-bar a {
   display: block;
   color: white;
@@ -44,9 +58,13 @@ body {
   color: white;
 }
 
+#home {
+  padding-top: 2rem;
+}
+
 .heading {
   color: azure;
-  margin-left: 160px;
+  margin-left: 8rem;
   text-align: center;
 }
 
@@ -67,24 +85,25 @@ body {
 
 .abthead p {
   color: white;
-  margin-left: 160px;
+  margin-left: 10rem;
   padding: 60px;
   padding-top: 0px;
   padding-bottom: 10px;
   font-family: "Roboto", sans-serif;
   text-align: left;
 }
+
 .abthead h1,
 .abthead h3 {
   color: white;
-  margin-left: 160px;
+  margin-left: 10rem;
   padding-left: 60px;
   padding-top: 40px;
   font-family: "Montserrat", sans-serif;
 }
 
 .white {
-  margin-left: 220px;
+  margin-left: 13rem;
   background-color: #fff;
   width: 76%;
   height: 10%;
@@ -98,32 +117,29 @@ body {
   font-size: large;
 }
 .card1 {
-  margin-left: 220px;
-  margin-top: 50px;
+  margin-left: 13rem;
+  margin-top: 3rem;
   background-color: #fff;
-  width: 500px;
-  height: 130px;
+  width: 36%;
   text-align: center;
 }
 .card4 {
   margin-right: 100px;
-  margin-top: 50px;
+  margin-top: 3rem;
   background-color: #fff;
-  width: 500px;
-  height: 130px;
+  width: 36%;
   text-align: center;
 }
 .card {
-  margin-top: 50px;
+  margin-top: 3rem;
   background-color: #fff;
-  width: 500px;
-  height: 130px;
+  width: 36%;
   text-align: center;
 }
 
 .btn {
-  margin-top: 50px;
-  margin-left: 220px;
+  margin-top: 3rem;
+  margin-left: 13rem;
   padding: 15px;
   background-color: #fff;
   width: 13%;
@@ -134,16 +150,17 @@ body {
 .btn-st {
   text-decoration: none;
   color: #000;
+  transition: transform 0.3s;
 }
 
 .skills {
-  margin-left: 220px;
+  margin-left: 13rem;
   display: flex;
   font-family: "Roboto", sans-serif;
 }
 
 .t1 {
-  margin-right: 40px;
+  margin-right: 6rem;
   width: 40%;
 }
 
@@ -174,7 +191,7 @@ td {
 }
 
 .head {
-  margin-left: 220px;
+  margin-left: 13rem;
   padding-top: 30px;
   padding-bottom: 40px;
   color: #fff;
@@ -183,7 +200,7 @@ td {
 }
 
 .hd {
-  margin-left: 220px;
+  margin-left: 13rem;
   color: #fff;
   font-family: "Roboto", sans-serif;
 }
@@ -194,7 +211,7 @@ td {
 
 .contact-me {
   color: #fff;
-  margin-left: 220px;
+  margin-left: 13rem;
   font-family: "Roboto", sans-serif;
 }
 
@@ -207,6 +224,7 @@ td {
   text-align: center;
   background-color: #fff;
   padding: 15px;
+  transition: transform 0.3s;
 }
 .mail a {
   text-decoration: none;
@@ -220,11 +238,12 @@ td {
 
 .foot {
   color: #fff;
-  margin-left: 180px;
+  margin-left: 11rem;
   display: flex;
   padding: 10%;
   padding-bottom: 0;
   justify-content: center;
+  transition: transform 0.3s;
 }
 .foot a {
   color: #fff;
@@ -232,13 +251,13 @@ td {
 
 .small {
   color: #fff;
-  margin-left: 180px;
+  margin-left: 11rem;
   text-align: center;
   padding-bottom: 5%;
 }
 
 #project {
-  margin-left: 220px;
+  margin-left: 13rem;
   color: #fff;
 }
 
@@ -249,7 +268,7 @@ td {
 
 .im {
   width: 40%;
-  margin-right: 70px;
+  transition: transform 0.3s; /* Animation */
 }
 .con {
   width: 30%;
@@ -258,6 +277,87 @@ td {
 
 .pro img {
   padding-top: 50px;
-  width: 600px;
-  height: 338px;
+  width: 35rem;
+  height: 20rem;
+}
+
+.im:hover {
+  transform: scale(1.03);
+}
+.zoom:hover {
+  transform: scale(1.05);
+}
+.zoom-foot:hover {
+  transform: scale(1.3);
+}
+
+@media (max-width: 1130px) {
+  .nav {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 102%;
+    height: 3.5rem;
+  }
+  .nav-bar {
+    float: left;
+    padding-top: 0;
+    position: relative;
+  }
+  .remove-icon {
+    width: 0;
+    height: 0;
+  }
+  .nav-bar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 13px 80px;
+    padding-top: 0;
+    margin: -1.2rem;
+    text-decoration: none;
+  }
+
+  .nav-bar img {
+    display: none;
+  }
+
+  .active {
+    padding-top: 0;
+  }
+}
+
+@media (max-height: 600px) {
+  .nav {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 102%;
+    height: 3.5rem;
+  }
+  .nav-bar {
+    float: left;
+    padding-top: 0;
+  }
+  .remove-icon {
+    width: 0;
+    height: 0;
+  }
+  .nav-bar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 13px 80px;
+    padding-top: 0;
+    margin: -1.2rem;
+    text-decoration: none;
+  }
+
+  .nav-bar img {
+    display: none;
+  }
+
+  .active {
+    padding-top: 0;
+  }
 }
