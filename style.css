@@ -19,6 +19,9 @@ body {
   }
 }
 
+.icon {
+  display: none;
+}
 .nav {
   list-style-type: none;
   margin: 0;
@@ -195,7 +198,7 @@ td {
 }
 
 .head {
-  margin-left: 6rem;
+  margin-left: 13rem;
   padding-top: 30px;
   padding-bottom: 40px;
   color: #fff;
@@ -396,6 +399,9 @@ td {
     width: 85%;
     height: 100%;
   }
+  .head {
+    margin-left: 6rem;
+  }
 }
 
 @media (max-height: 600px) {
@@ -499,6 +505,9 @@ td {
     width: 85%;
     height: 100%;
   }
+  .head {
+    margin-left: 6rem;
+  }
 }
 
 /* For desktop: */
@@ -571,5 +580,8 @@ td {
   .pro img {
     width: 85%;
     height: 100%;
+  }
+  .head {
+    margin-left: 6rem;
   }
 }
