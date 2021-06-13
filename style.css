@@ -393,9 +393,6 @@ td {
 }
 
 @media (max-height: 600px) {
-  body {
-    width: 100vw;
-  }
   .nav {
     display: flex;
     justify-content: center;
@@ -406,6 +403,7 @@ td {
   .nav-bar {
     float: left;
     padding-top: 0;
+    position: relative;
   }
   .remove-icon {
     width: 0;
@@ -428,12 +426,21 @@ td {
   .active {
     padding-top: 0;
   }
+  .project1 {
+    display: block;
+  }
+  .cards {
+    flex-direction: column;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    align-items: center;
+  }
+
   .heading,
   .abthead p,
   .abthead h1,
   .abthead h3,
   .white,
-  .card1,
   .btn,
   .skills,
   .heading,
@@ -442,12 +449,45 @@ td {
   .foot,
   .small {
     margin-left: 2rem;
+    justify-content: center;
+  }
+  .card1 {
+    margin-left: 0rem;
+    padding: 0;
+  }
+  .btn {
+    width: 40%;
+  }
+  .align-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .align-skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   #project {
     margin-left: 2rem;
   }
   .con {
     width: 100%;
+  }
+  .im {
+    width: 100%;
+    text-align: center;
+  }
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .mail {
+    width: 20%;
   }
 }
 
@@ -493,5 +533,24 @@ td {
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 10.5rem;
+    padding-top: 12px;
+    background-color: #000;
+  }
+  .nav-bar a.active {
+    margin: -3.4rem;
+  }
+  .space {
+    height: 150px;
   }
 }
