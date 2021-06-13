@@ -299,6 +299,9 @@ td {
 }
 
 @media (max-width: 1130px) {
+  body {
+    overflow-x: hidden;
+  }
   .nav {
     display: flex;
     justify-content: center;
@@ -405,6 +408,9 @@ td {
 }
 
 @media (max-height: 600px) {
+  body {
+    overflow-x: hidden;
+  }
   .nav {
     display: flex;
     justify-content: center;
